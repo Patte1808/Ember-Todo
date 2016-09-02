@@ -1,0 +1,15 @@
+
+    <label class="label">Todo title</label>
+    <p class="control">
+        {{input value=title class="input" placeholder="The title of your todo"}}
+    </p>
+
+    <label class="label">Text</label>
+    <p class="control">
+        {{input value=body class="input" placeholder="Additional text for your todo"}}
+    </p>
+
+    <p class="control">
+        <button class="button is-primary" {{action 'newTodo'}}>Submit</button>
+        <button class="button is-link">Cancel</button>
+    </p>

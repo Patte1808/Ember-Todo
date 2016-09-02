@@ -9,6 +9,7 @@ const Router = Ember.Router.extend({
 Router.map(function() {
   this.route('todos', function() {
     this.route('index');
+    this.route('new');
   });
 });
 

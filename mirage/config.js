@@ -38,4 +38,6 @@ export default function() {
     let todo = schema.todos.find(request.params.id);
     todo.destroy();
   });
+
+  this.post('/todos');
 }
