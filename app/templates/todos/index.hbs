@@ -1,0 +1,21 @@
+<ul>
+  {{#each model as |todo|}}
+    <li style="margin-top:8px;">
+        <div class="box">
+            <strong>{{todo.title}}</strong>
+            <br>
+            {{todo.body}}
+            <nav class="level">
+                <div class="level-left">
+                    <a href="" class="level-item">
+                        Edit
+                    </a>
+                    <a href="#" class="level-item" {{action "remove" todo.id}}>
+                        Delete
+                    </a>
+                </div>
+            </nav>
+        </div>
+    </li>
+  {{/each}}
+</ul>
